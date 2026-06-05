@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartRoom - Intelligent Home Control System</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <i class="fas fa-home"></i>
+                <span>SmartRoom</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#devices">Devices</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to SmartRoom</h1>
+            <p>Control your home devices with ease and efficiency</p>
+            <button class="btn btn-primary">Get Started</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="dashboard" class="dashboard">
+            <div class="container">
+                <h2>Dashboard</h2>
+                <div class="status-grid">
+                    <div class="status-card">
+                        <div class="status-icon temperature">
+                            <i class="fas fa-thermometer-half"></i>
+                        </div>
+                        <div class="status-info">
+                            <h3>Temperature</h3>
+                            <p class="status-value">22°C</p>
+                            <p class="status-label">Comfortable</p>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon humidity">
+                            <i class="fas fa-droplet"></i>
+                        </div>
+                        <div class="status-info">
+                            <h3>Humidity</h3>
+                            <p class="status-value">45%</p>
+                            <p class="status-label">Normal</p>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon lighting">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="status-info">
+                            <h3>Lighting</h3>
+                            <p class="status-value">75%</p>
+                            <p class="status-label">Bright</p>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-icon energy">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="status-info">
+                            <h3>Energy Usage</h3>
+                            <p class="status-value">2.4 kW</p>
+                            <p class="status-label">Normal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="devices" class="devices">
+            <div class="container">
+                <h2>Smart Devices</h2>
+                <div class="devices-grid">
+                    <div class="device-card">
+                        <div class="device-icon lights">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Lights</h3>
+                        <p>Smart LED Bulbs</p>
+                        <div class="device-controls">
+                            <button class="btn-control btn-off">Off</button>
+                            <button class="btn-control btn-on active">On</button>
+                        </div>
+                        <div class="slider-control">
+                            <input type="range" min="0" max="100" value="75" class="brightness-slider">
+                            <span class="slider-value">75%</span>
+                        </div>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-icon ac">
+                            <i class="fas fa-fan"></i>
+                        </div>
+                        <h3>AC Unit</h3>
+                        <p>Temperature Control</p>
+                        <div class="device-controls">
+                            <button class="btn-control btn-off">Off</button>
+                            <button class="btn-control btn-on active">On</button>
+                        </div>
+                        <div class="temperature-control">
+                            <button class="temp-btn">-</button>
+                            <span class="temp-display">22°C</span>
+                            <button class="temp-btn">+</button>
+                        </div>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-icon security">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Security System</h3>
+                        <p>Door & Window Sensors</p>
+                        <div class="device-controls">
+                            <button class="btn-control btn-off active">Disarmed</button>
+                            <button class="btn-control btn-on">Armed</button>
+                        </div>
+                        <p class="device-status">All doors locked</p>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-icon speaker">
+                            <i class="fas fa-volume-high"></i>
+                        </div>
+                        <h3>Smart Speaker</h3>
+                        <p>Audio System</p>
+                        <div class="device-controls">
+                            <button class="btn-control btn-off">Off</button>
+                            <button class="btn-control btn-on active">On</button>
+                        </div>
+                        <div class="slider-control">
+                            <input type="range" min="0" max="100" value="50" class="volume-slider">
+                            <span class="slider-value">50%</span>
+                        </div>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-icon blinds">
+                            <i class="fas fa-window-maximize"></i>
+                        </div>
+                        <h3>Smart Blinds</h3>
+                        <p>Automated Curtains</p>
+                        <div class="device-controls">
+                            <button class="btn-control btn-off">Close</button>
+                            <button class="btn-control btn-on active">Open</button>
+                        </div>
+                        <p class="device-status">Fully open</p>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-icon camera">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Security Camera</h3>
+                        <p>Surveillance System</p>
+                        <div class="device-controls">
+                            <button class="btn-control btn-off">Off</button>
+                            <button class="btn-control btn-on active">On</button>
+                        </div>
+                        <p class="device-status">Recording</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="settings" class="settings">
+            <div class="container">
+                <h2>Settings & Preferences</h2>
+                <div class="settings-grid">
+                    <div class="settings-card">
+                        <h3>Room Configuration</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="room-name">Room Name</label>
+                                <input type="text" id="room-name" placeholder="Enter room name" value="Master Bedroom">
+                            </div>
+                            <div class="form-group">
+                                <label for="room-size">Room Size (sq ft)</label>
+                                <input type="number" id="room-size" placeholder="Enter room size" value="250">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save Configuration</button>
+                        </form>
+                    </div>
+
+                    <div class="settings-card">
+                        <h3>Automation Rules</h3>
+                        <div class="automation-list">
+                            <div class="automation-item">
+                                <h4>Morning Routine</h4>
+                                <p>Turn on lights at 7:00 AM</p>
+                                <button class="btn-toggle active">Enabled</button>
+                            </div>
+                            <div class="automation-item">
+                                <h4>Night Mode</h4>
+                                <p>Dim lights at 10:00 PM</p>
+                                <button class="btn-toggle">Disabled</button>
+                            </div>
+                            <div class="automation-item">
+                                <h4>Energy Saving</h4>
+                                <p>Reduce power consumption</p>
+                                <button class="btn-toggle active">Enabled</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-card">
+                        <h3>Notifications</h3>
+                        <form>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="notify-security" checked>
+                                <label for="notify-security">Security Alerts</label>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="notify-energy" checked>
+                                <label for="notify-energy">Energy Usage</label>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="notify-devices">
+                                <label for="notify-devices">Device Status Changes</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Update Preferences</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About SmartRoom</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Intelligent Home Control System</h3>
+                        <p>SmartRoom is a comprehensive home automation system designed to make your living space more comfortable, secure, and energy-efficient. With intuitive controls and advanced automation features, managing your home has never been easier.</p>
+                        <div class="features-list">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Real-time Device Control</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Energy Monitoring</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Automated Routines</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Security Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>1000+</h4>
+                            <p>Happy Users</p>
+                        </div>
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>Supported Devices</p>
+                        </div>
+                        <div class="stat">
+                            <h4>99.9%</h4>
+                            <p>Uptime</p>
+                        </div>
+                        <div class="stat">
+                            <h4>24/7</h4>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SmartRoom</h4>
+                    <p>Your intelligent home control solution</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#devices">Devices</a></li>
+                        <li><a href="#settings">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SmartRoom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
