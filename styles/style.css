@@ -12,11 +12,6 @@
         gap: 20px;
     }
 
-    .about-content {
-        flex-direction: column;
-        gap: 30px;
-    }
-
 
   .hero h1 {
         font-size: 2.8rem;
