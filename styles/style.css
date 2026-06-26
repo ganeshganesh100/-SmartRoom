@@ -35,12 +35,6 @@
         position: relative;
     }
 
-     .hamburger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        gap: 5px;
-    }
     .hamburger span {
         width: 28px;
         height: 3px;
